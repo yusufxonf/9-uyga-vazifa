@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.child1 {
+    background-color: rgb(246, 255, 0);
+    grid-area: child1;
+    background-image: url("./10923.jpg");
+    background-size: cover;
+}
+
+.child2 {
+    background-color: rgb(153, 153, 157);
+    grid-area: child2;
+    background-image: url("./wtrfll3.jpg");
+    background-size: cover;
+}
+
+.box1 {
+    grid-gap: 20px;
+    display: grid;
+    grid-area: box1;
+    /* grid-gap: 20px; */
+    grid-template-areas: "child1"
+        "child1"
+        "child2";
+}
+
+
+.child3 {
+
+    background-color: rgb(63, 228, 203);
+    grid-area: child3;
+    background-image: url("./Без\ названия.jpg");
+    background-size: cover;
+
+}
+
+.child4 {
+
+    background-color: rgb(24, 77, 31);
+    grid-area: child4;
+    background-image: url("./qish-sabogi.jpg");
+    background-size: cover;
+
+}
+
+.box2 {
+
+    grid-gap: 20px;
+    display: grid;
+    grid-area: box2;
+    grid-template-areas: "child3"
+        "child4"
+        "child4";
+}
+
+.child5 {
+
+    background-color: rgb(11, 11, 19);
+    grid-area: child5;
+    background-image: url("./1695296584_2-83.jpg");
+    background-size: cover;
+
+}
+
+.child6 {
+
+    background-color: rgb(96, 111, 98);
+    grid-area: child6;
+    background-image: url("./images.jpg");
+    background-size: cover;
+
+}
+
+.child7 {
+
+    background-color: rgb(145, 79, 22);
+    grid-area: child7;
+    background-image: url("./1695296584_2-83.jpg");
+    background-size: cover;
+
+}
+
+.child8 {
+
+    background-image: url("./mountains-germany-valley-bayern-wallpaper-preview.jpg");
+    background-size: cover;
+    grid-area: child8;
+
+}
+
+
+
+.box3 {
+    display: grid;
+    grid-gap: 20px;
+    grid-area: box3;
+    grid-template-areas: "child5 child5 child5 child5"
+        "child6 child6 child7 child7"
+        "child8 child8 child8 child8";
+}
+
+
+.container {
+    width: 1200px;
+    height: 700px;
+    display: grid;
+    grid-template-areas: "box1 box2 box3";
+    grid-gap: 20px;
+}
